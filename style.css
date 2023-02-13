@@ -104,6 +104,7 @@ p{letter-spacing: 1px;}
 
 @media (max-width: 968px) {
   #home{margin-top: 150px;}
+  #home .col-40{overflow:hidden}
   .cover{display: block;text-align: center;height:auto;}
   .cover__content{margin-left: 0;margin-bottom: 70px;}
 }
