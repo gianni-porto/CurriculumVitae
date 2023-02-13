@@ -87,9 +87,10 @@ tl
 .to(".fade-in", { opacity: 1, y:0,stagger:.2})
 .to(".cover__img", { clipPath: "circle(100% at 50% 50%)", y:0})
 
-gsap.to(".cover__img", {
+gsap.to(".graphic", {
   opacity:0,
   x:-200,
+  y:200,
   scrollTrigger: {
       trigger: ".cover",
       start: "top top",
@@ -97,6 +98,8 @@ gsap.to(".cover__img", {
       scrub: true 
   }
 });
+
+
 
 
 
