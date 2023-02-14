@@ -10,6 +10,12 @@ window.addEventListener("load", function() {
 
 let nav = document.querySelector('.icon-hamburger');
 let head = document.querySelector('.header');
+
+//metto l'header fisso in modalità desktop
+if (window.innerWidth > 968) {
+  head.style.position = "fixed";
+}
+
 nav.addEventListener("click", function() {
       document.body.classList.toggle('menu-open');
       head.style.position = "fixed";
@@ -33,9 +39,15 @@ function clickHandler(e) {
   });
 
   document.body.classList.remove('menu-open');
-  head.style.position = "absolute";
+
+     
+  //metto head in abslute in modalità mobile quando scrollo
+  if (!document.body.classList.contains('menu-open') && window.innerWidth < 968) {
+    head.style.position = "absolute";
+  }
   
-}
+}  
+
 
 
 let sections = document.querySelectorAll('.section');
