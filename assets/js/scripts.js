@@ -9,10 +9,10 @@ window.addEventListener("load", function() {
 
 
 let nav = document.querySelector('.icon-hamburger');
-
+let head = document.querySelector('.header');
 nav.addEventListener("click", function() {
       document.body.classList.toggle('menu-open');
-      
+      head.style.position = "fixed";
 });
 
 
@@ -33,7 +33,8 @@ function clickHandler(e) {
   });
 
   document.body.classList.remove('menu-open');
-
+  head.style.position = "absolute";
+  
 }
 
 
