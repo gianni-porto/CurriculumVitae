@@ -43,6 +43,7 @@ p{letter-spacing: 1px;}
 .header{position: fixed; top:0;  left:0; z-index: 99;height: 100vh; padding: 10px 15px;display: flex;flex-flow: column; justify-content: space-between;transition: all .3s cubic-bezier(.215, .61, .355, 1);}
 
 .header__logo{width: 140px;height: 140px;opacity: 0;transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+.scroll-down .header__logo{opacity: 0;}
 
 .header__menu li{display: block;}
 .header__menu li a{color:var(--color-2);display: block;padding: 16px;font-size: 1.2rem;text-transform: uppercase;font-weight: 300;position: relative;opacity: 0;transition: all .3s cubic-bezier(.215, .61, .355, 1); }
