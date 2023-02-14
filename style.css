@@ -92,7 +92,7 @@ p{letter-spacing: 1px;}
 /* ! Cover */
 .cover{padding:10px; margin:0px;height: 100vh; width:100%;display:flex; flex-direction:column; justify-content:center;}
 
-.cover__content .button{position: relative;padding-bottom: 25px;}
+.cover__content .button{position: relative;padding-bottom: 25px;position: relative;z-index: 100;}
 .cover__content .button:after{position: absolute;content:' ';width: 25px;height: 25px;background: url('assets/img/arrow-down-outline-white.svg') no-repeat;bottom: 5%;left: 50%;transform: translateX(-50%);transition: all .3s cubic-bezier(.215, .61, .355, 1);}
 .cover__content .button:hover:after{background: url('assets/img/arrow-down-outline.svg');bottom: 0;}
 
